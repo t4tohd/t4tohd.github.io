@@ -27,14 +27,14 @@ p {
 }
 </style>
  <script>
-        // Función para obtener el parámetro de consulta "url" de la URL
+        // FunciÃ³n para obtener el parÃ¡metro de consulta "url" de la URL
         function getQueryParam(param) {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             return urlParams.get(param);
         }
 
-        // Obtener el valor del parámetro "url" de la URL
+        // Obtener el valor del parÃ¡metro "url" de la URL
         const urlParameterValue = getQueryParam('url');
 
         // Mostrar el valor en el div
@@ -71,7 +71,7 @@ p {
     P2PEngineHls.tryRegisterServiceWorker(p2pConfig).then(() => {
         var player = new Clappr.Player(
             {
-                source: "urlDisplay",
+                source: "https://fly.live.ceeblue.tv/cmaf/out+de1e6f7c-e5db-450b-9603-c3644274779b/index.m3u8",
                 parentId: "#player",
                 autoPlay: true,
 				width: '100%',
